@@ -16,6 +16,7 @@ Enable the module in your world. The macros appear in the **Mossback Macros** co
 
 | Macro | What it does |
 |---|---|
+| Recall Knowledge | Rolls Recall Knowledge against your target, offering only the skills that can identify it. Target-based bonuses, like a mark on your quarry, apply automatically. Secret check. |
 | Selected Tokens Report | Whispers the GM the HP, AC, and level of every selected token. |
 
 ## Compatibility

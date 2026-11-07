@@ -4,3 +4,4 @@
 
 - Module skeleton: manifest, macro compendium build, release workflow.
 - Added **Selected Tokens Report** macro.
+- Added **Recall Knowledge** macro.
