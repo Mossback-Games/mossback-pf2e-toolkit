@@ -1,0 +1,52 @@
+{
+  "id": "mossback-pf2e-toolkit",
+  "title": "Mossback's PF2E Toolkit",
+  "description": "Macros and automation for Pathfinder 2E (Remaster) in Foundry VTT, by Mossback Games.",
+  "version": "0.0.0",
+  "authors": [
+    {
+      "name": "Mossback Games",
+      "url": "https://github.com/Mossback-Games"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "macros",
+      "label": "Mossback Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Mossback Games",
+      "sorting": "a",
+      "packs": [
+        "macros"
+      ]
+    }
+  ],
+  "url": "https://github.com/Mossback-Games/mossback-pf2e-toolkit",
+  "bugs": "https://github.com/Mossback-Games/mossback-pf2e-toolkit/issues",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "manifest": "https://github.com/Mossback-Games/mossback-pf2e-toolkit/releases/latest/download/module.json",
+  "download": "https://github.com/Mossback-Games/mossback-pf2e-toolkit/releases/download/v0.0.0/module.zip"
+}
