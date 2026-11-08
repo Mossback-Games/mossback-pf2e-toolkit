@@ -1,0 +1,5 @@
+# Keep LF line endings in the repo and in checkouts on every platform.
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.jpg binary
