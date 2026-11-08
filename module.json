@@ -21,6 +21,9 @@
       }
     ]
   },
+  "esmodules": [
+    "automation/main.mjs"
+  ],
   "packs": [
     {
       "name": "macros",
