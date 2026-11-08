@@ -18,4 +18,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - name: Check automation syntax
+        run: for f in automation/*.mjs; do node --check "$f"; done
       - run: npm run build
