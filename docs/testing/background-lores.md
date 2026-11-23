@@ -47,3 +47,7 @@
 ## Report back
 
 - Pass/fail for A1–G1, and any console errors copied exactly.
+
+## Results
+
+**Run 1 — 2026-11-08** · Foundry VTT 14 (build 370), PF2e 8.7.0. **All checks pass (A1–G1).**

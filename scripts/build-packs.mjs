@@ -33,7 +33,7 @@ function parseHeader(source, file) {
   const match = source.match(/^\s*\/\*\*([\s\S]*?)\*\//);
   if (!match) throw new Error(`${file}: missing /** header */ block`);
   const tags = {};
-  for (const line of match[1].split("\n")) {
+  for (const line of match[1].split(/\r?\n/)) { // Windows checkouts use CRLF
     const m = line.match(/^\s*\*?\s*@(\w+)\s+(.*)$/);
     if (m) tags[m[1]] = m[2].trim();
   }
