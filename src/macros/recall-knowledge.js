@@ -3,7 +3,7 @@
  * @img icons/svg/book.svg
  * @description Rolls Recall Knowledge against your targeted creature. Offers only the skills that can identify it, with your modifiers, and rolls against its identification DC so target-based bonuses (marks, Hunt Prey-style effects) apply. A secret check: the GM sees the result.
  * @foundry 14
- * @pf2e current as of November 2026
+ * @pf2e 8.7
  * @requires none
  * @author Mossback Games
  */

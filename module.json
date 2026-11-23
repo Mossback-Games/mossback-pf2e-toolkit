@@ -10,14 +10,18 @@
     }
   ],
   "compatibility": {
-    "minimum": "13",
-    "verified": "13"
+    "minimum": "14",
+    "verified": "14"
   },
   "relationships": {
     "systems": [
       {
         "id": "pf2e",
-        "type": "system"
+        "type": "system",
+        "compatibility": {
+          "minimum": "8.7.0",
+          "verified": "8.7.0"
+        }
       }
     ]
   },

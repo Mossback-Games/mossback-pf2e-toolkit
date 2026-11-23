@@ -30,6 +30,8 @@ Turned on when the module is enabled. Each one can be switched off in **Configur
 
 ## Compatibility
 
+Requires **Foundry VTT v14** and the **Pathfinder Second Edition system 8.7** or later.
+
 Each macro's header lists the Foundry and PF2E system versions it was tested on. Macros may break when Foundry or the PF2E system updates; check the header before reporting an issue.
 
 ## Support

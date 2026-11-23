@@ -4,8 +4,8 @@
  * @name Macro Name Here
  * @img icons/svg/dice-target.svg
  * @description One or two sentences on what the macro does and who it's for.
- * @foundry 13
- * @pf2e 7.x
+ * @foundry 14
+ * @pf2e 8.7
  * @requires none
  * @author Mossback Games
  */
