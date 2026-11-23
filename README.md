@@ -57,6 +57,8 @@ npm run build    # compile src/macros into packs/macros
 
 **Releasing:** update `CHANGELOG.md`, then publish a GitHub release with a tag like `v0.1.0`. The release workflow builds the compendium, stamps the version, and attaches `module.json` and `module.zip`.
 
+For full releases (not pre-releases) it then lists the new version on foundryvtt.com, using the package release token stored as the `FOUNDRY_RELEASE_TOKEN` repository secret. To list a release that was published before the secret existed, run **Actions → Register with Foundry** with its tag.
+
 ## License
 
 Code is MIT licensed. See [LICENSE](LICENSE).

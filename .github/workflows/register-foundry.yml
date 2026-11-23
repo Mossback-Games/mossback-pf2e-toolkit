@@ -1,0 +1,39 @@
+# Run by hand (Actions tab → Register with Foundry → Run workflow) to list an
+# already-published release on foundryvtt.com, e.g. one released before the
+# release token was set up. New releases are registered automatically by
+# release.yml.
+
+name: Register with Foundry
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to register (e.g. v0.1.0)"
+        required: true
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      # The current script, with the id and compatibility from that release's own module.json
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Register version with Foundry
+        env:
+          FOUNDRY_RELEASE_TOKEN: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          MODULE_JSON: tag-module.json
+        run: |
+          git show "$RELEASE_TAG:module.json" > tag-module.json
+          if [ -z "$FOUNDRY_RELEASE_TOKEN" ]; then
+            echo "::error::Add the FOUNDRY_RELEASE_TOKEN secret first (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          node scripts/register-foundry-version.mjs
