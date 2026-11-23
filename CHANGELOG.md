@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 (2026-11-23)
+
+First release. Requires Foundry VTT v14 and the PF2E system 8.7 or later.
 
 - Module skeleton: manifest, macro compendium build, release workflow.
 - Added **Selected Tokens Report** macro.

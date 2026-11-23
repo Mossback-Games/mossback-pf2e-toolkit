@@ -2,8 +2,8 @@
  * @name Selected Tokens Report
  * @img icons/svg/book.svg
  * @description Whispers the GM a quick summary (HP, AC, level) of every selected token. Doubles as a working example of the macro template.
- * @foundry 13
- * @pf2e 7.x
+ * @foundry 14
+ * @pf2e 8.7
  * @requires none
  * @author Mossback Games
  */
