@@ -36,7 +36,7 @@ Each macro's header lists the Foundry and PF2E system versions it was tested on.
 
 ## Support
 
-These macros are shared as-is. Bug reports are welcome on the [issue tracker](https://github.com/Mossback-Games/mossback-pf2e-toolkit/issues), but fixes aren't guaranteed.
+These macros are shared as-is. Bug reports are welcome on the [issue tracker](https://github.com/Mossback-Games/mossback-pf2e-toolkit/issues) or by email to [support@mossback-games.com](mailto:support@mossback-games.com), but fixes aren't guaranteed. For anything else, write to [contact@mossback-games.com](mailto:contact@mossback-games.com).
 
 ## Development
 
