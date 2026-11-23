@@ -38,3 +38,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload "${{ github.event.release.tag_name }}" module.json module.zip --clobber
+
+      # Lists the new version on foundryvtt.com so Foundry's package browser
+      # offers it. Skipped for pre-releases, and when the secret isn't set.
+      - name: Register version with Foundry
+        if: ${{ !github.event.release.prerelease }}
+        env:
+          FOUNDRY_RELEASE_TOKEN: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: node scripts/register-foundry-version.mjs
